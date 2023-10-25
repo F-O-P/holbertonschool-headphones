@@ -9,8 +9,7 @@
   
     --text-color: var(--color-black);
   
-    --font-family-base: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    --font-family-title: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-family-base: 'Source Sans Pro';
   
     --font-size-xx-small: 0.75rem;
     --font-size-x-small: 0.875rem;
@@ -31,6 +30,18 @@
 /* Task 0
   ============================= */
 
+  html * {
+    font-family: var(--font-family-base);
+  }
+
+  * {
+    text-decoration: none;
+    margin: 0;
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+  }
+
   @media (min-width: 768px) {
 
   }
@@ -39,15 +50,57 @@
 
   }
 
+  .logo {
+    width: 10.125rem;
+    height: 2rem;
+  }
+
+  h1 {
+    font-size: var(--font-size-xx-large);
+  }
+
+  h2 {
+    font-size: var(--font-size-x-large);
+  }
+
+  h3 {
+    font-size: var(--font-size-large);
+  }
+
+  .white-text {
+    color: var(--color-white);
+  }
+
+  .black-text {
+    color: var(--color-black);
+  }
+
+  .action-button {
+    background: var(--color-primary);
+    color: var(--color-white);
+    border-radius: 1.375rem;
+    width: 10.125rem;
+    height: 2.75rem;
+    font-size: var(--font-size-x-small);
+    font-weight: var(--font-weight-x-bold);
+    line-height: var(--line-height-base);
+    text-align: center;
+    border: none;
+  }
+
+  .uppercase {
+    text-transform: uppercase;
+  }
+
   body {
     background: url("./images/headphones_hero_1.jpg");
     width: 100vw;
     height: 100vh;
-    min-width: 1440px;
+    min-width: 375px;
     background-size: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 0;
+    background-color: var(--color-background);
   }
 
   @media (min-width: 768px) {
@@ -69,4 +122,224 @@
 
   @media (min-width: 1400px) {
 
+  }
+
+  .navbar {
+
+  }
+
+  @media (min-width: 768px) {
+
+  }
+
+  @media (min-width: 1400px) {
+
+  }
+
+  .nav-menu {
+
+  }
+
+  @media (min-width: 768px) {
+
+  }
+
+  @media (min-width: 1400px) {
+
+  }
+
+  .nav-item {
+
+  }
+
+  @media (min-width: 768px) {
+
+  }
+
+  @media (min-width: 1400px) {
+
+  }
+
+  .nav-link {
+
+  }
+
+  @media (min-width: 768px) {
+
+  }
+
+  @media (min-width: 1400px) {
+
+  }
+
+  main {
+
+  }
+
+  @media (min-width: 768px) {
+
+  }
+
+  @media (min-width: 1400px) {
+
+  }
+
+  .banner {
+
+  }
+  
+  @media (min-width: 768px) {
+
+  }
+
+  @media (min-width: 1400px) {
+
+  }
+
+  .banner-content {
+
+  }
+
+  @media (min-width: 768px) {
+
+  }
+
+  @media (min-width: 1400px) {
+
+  }
+
+  .banner-title h1 {
+
+  }
+
+  .banner-content p {
+
+  }
+
+  .what-we-do-section {
+    background-color: var(--color-white);
+  }
+
+  .services {
+
+  }
+
+  .service {
+
+  }
+
+  .our-results-section {
+    background-image: url("./images/headphones_hero_2.jpg");
+    background-size: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+
+  .our-results-content {
+    padding-top: 7.81rem;
+  }
+
+  .our-results-content p {
+    margin-bottom: 4.81rem;
+    margin-top: 2.88rem;
+    margin-left: 2.2rem;
+    margin-right: 2.2rem;
+  }
+
+  .results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 4.31rem;
+  }
+
+  .result {
+    display: flex;
+  }
+
+  .result img {
+    width: 11.875rem;
+    height: 11.875rem;
+  }
+
+  .result-math {
+    margin-top: 3.5rem;
+    margin-left: -12rem;
+  }
+
+  .result-math h1 {
+    font-size: var(--font-size-xx-large);
+  }
+
+  .result-math p {
+    margin-top: 1.05rem;
+  }
+
+  .contact-us-section {
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-us {
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2.81rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    height: 18.69rem;
+  }
+
+  .form-input {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-us h2 {
+    margin-top: 6.88rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .contact-form label {
+    text-align: left;
+  }
+
+  .contact-form input {
+    background: transparent;
+    border: none;
+    border-bottom: 0.0625rem solid var(--color-black);
+  }
+
+  .contact-us button {
+    margin-top: 3.5rem;
+    margin-bottom: 8.13rem;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-logo {
+    margin-top: 3.44rem;
+  }
+
+  .footer-social-media {
+    width: 8.125rem;
+    height: 1.875rem;
+    margin-top: 3.12rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .watermark {
+    opacity: 0.3517;
+    margin-top: 2.81rem;
+    margin-bottom: 2.12rem;
   }
