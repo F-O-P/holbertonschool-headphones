@@ -1,0 +1,400 @@
+/* Global Variables
+   ============================= */
+
+   :root {
+    --color-primary: #FF6565;
+    --color-black:  #071629;
+    --color-white: #ffffff;
+    --color-background: #071629;
+  
+    --text-color: var(--color-black);
+  
+    --font-family-base: 'Source Sans Pro';
+  
+    --font-size-xx-small: 0.75rem;
+    --font-size-x-small: 0.875rem;
+    --font-size-small: 1rem;
+    --font-size-medium: 1.125rem;
+    --font-size-large: 1.25rem;
+    --font-size-x-large: 2rem;
+    --font-size-xx-large: 2.875rem;
+  
+    --font-weight-regular: 400;
+    --font-weight-bold: 600;
+    --font-weight-x-bold: 700;
+  
+    --line-height-base: normal;
+    --line-height-adjusted: 1.625rem;
+  }
+
+ /* Global Targets
+  ============================= */
+
+  html * {
+    font-family: var(--font-family-base);
+  }
+
+  * {
+    text-decoration: none;
+    margin: 0;
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .logo {
+    width: 10.125rem;
+    height: 2rem;
+  }
+
+  h1 {
+    font-size: var(--font-size-xx-large);
+  }
+
+  h2 {
+    font-size: var(--font-size-x-large);
+  }
+
+  h3 {
+    font-size: var(--font-size-large);
+  }
+
+  .white-text {
+    color: var(--color-white);
+  }
+
+  .black-text {
+    color: var(--color-black);
+  }
+
+  .action-button {
+    background: var(--color-primary);
+    color: var(--color-white);
+    border-radius: 1.375rem;
+    width: 10.125rem;
+    height: 2.75rem;
+    font-size: var(--font-size-x-small);
+    font-weight: var(--font-weight-x-bold);
+    line-height: var(--line-height-base);
+    text-align: center;
+    border: none;
+  }
+
+  .uppercase {
+    text-transform: uppercase;
+  }
+
+  body {
+    background: url("./images/headphones_hero_1.jpg");
+    width: 100vw;
+    height: 100vh;
+    min-width: 375px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: var(--color-background);
+  }
+
+/* Task 0 - Header and Navbar
+  ============================= */
+
+  header {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-responsive {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    width: 15.4375rem;
+    height: 2.5rem;
+    padding-top: 1.81rem;
+  }
+
+  .hamburger {
+    display: block;
+    margin-left: 1.31rem;
+  }
+
+  .bar-large {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s;
+    background-color: var(--color-white);
+  }
+
+  .bar-small {
+    display: block;
+    width: 15px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s;
+    background-color: var(--color-white);
+  }
+
+  .bar-medium {
+    display: block;
+    width: 20px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s;
+    background-color: var(--color-white);
+  }
+
+  .header-logo {
+  }
+
+  .nav-bar img {
+    padding-right: 6.69rem;
+  }
+
+  .nav-menu {
+
+  }
+
+  .nav-item {
+    list-style: none;
+  }
+
+  .nav-link {
+
+  }
+
+  main {
+
+  }
+
+  .banner {
+
+  }
+  
+  .banner-content {
+
+  }
+
+  .title { 
+    padding-top: 20.44rem;
+  }
+
+  .slogan {
+    font-weight: var(--font-weight-x-bold);
+    font-size: var(--font-size-small);
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .description {
+    padding-bottom: 6.63rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-small);
+    line-height: var(--line-height-adjusted);
+  }
+
+  .banner-button {
+    margin-bottom: 4.06rem;
+    margin-top: 1.25rem;
+  }
+
+/* Task 1 - What We Do
+  ============================= */
+
+  .what-we-do-section {
+    background-color: var(--color-white);
+  }
+
+  .what-we-do-content {
+    padding-bottom: 6.87rem;
+  }
+
+  .what-we-do-content h2 {
+    padding-top: 6.87rem;
+  }
+  .what-we-do-content p {
+    padding-top: 2.5rem;
+    padding-left: 1.56rem;
+    padding-right: 1.56rem;
+  }
+
+  .services {
+    padding-top: 6.88rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 6rem;
+  }
+
+  .service {
+
+  }
+
+  .service img {
+    padding-bottom: 1.48rem;
+  }
+
+  .service h3 {
+
+  }
+
+  .service p {
+    padding-left: 5.25rem;
+    padding-right: 5.25rem;
+  }
+
+/* Task 2 - Results
+  ============================= */
+
+  .our-results-section {
+    background-image: url("./images/headphones_hero_2.jpg");
+    background-size: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .our-results-content {
+    padding-top: 7.81rem;
+  }
+
+  .our-results-content p {
+    margin-bottom: 4.81rem;
+    margin-top: 2.88rem;
+    margin-left: 2.2rem;
+    margin-right: 2.2rem;
+  }
+
+  .results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.62rem;
+    padding-bottom: 4.31rem;
+  }
+
+  .result {
+    display: flex;
+  }
+
+  .result img {
+    width: 11.875rem;
+    height: 11.875rem;
+  }
+
+  .result-math {
+    margin-top: 3.5rem;
+    margin-left: -12rem;
+  }
+
+  .result-math h1 {
+    font-size: var(--font-size-xx-large);
+  }
+
+  .result-math p {
+    margin-top: 1.05rem;
+  }
+
+/* Task 3 - Contact Us
+  ============================= */
+
+  .contact-us-section {
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-us {
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2.81rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    height: 18.69rem;
+  }
+
+  .form-input {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-us h2 {
+    margin-top: 6.88rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .contact-form label {
+    text-align: left;
+  }
+
+  .contact-form input {
+    background: transparent;
+    border: none;
+    border-bottom: 0.0625rem solid var(--color-black);
+  }
+
+  .contact-us button {
+    margin-top: 3.5rem;
+    margin-bottom: 8.13rem;
+  }
+
+/* Task 4 - Footer
+  ============================= */
+
+  .footer-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-logo-socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .footer-logo-socials {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      padding-left: 3.125rem;
+      padding-right: 3.125rem;
+    }
+  }
+
+  .footer-logo {
+    margin-top: 3.44rem;
+  }
+
+  .footer-social-media {
+    width: 8.125rem;
+    height: 1.875rem;
+    margin-top: 3.12rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .watermark {
+    opacity: 0.3517;
+    margin-top: 2.81rem;
+    padding-bottom: 2.12rem;
+  }

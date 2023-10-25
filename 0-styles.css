@@ -1,4 +1,4 @@
-/* Variables
+/* Global Variables
    ============================= */
 
   :root {
@@ -27,7 +27,7 @@
     --line-height-adjusted: 1.625rem;
   }
 
-/* Task 0
+ /* Global Targets
   ============================= */
 
   html * {
@@ -40,14 +40,8 @@
     list-style-type: none;
     text-align: center;
     margin: 0;
-  }
-
-  @media (min-width: 768px) {
-
-  }
-
-  @media (min-width: 1400px) {
-
+    padding: 0;
+    box-sizing: border-box;
   }
 
   .logo {
@@ -97,78 +91,86 @@
     width: 100vw;
     height: 100vh;
     min-width: 375px;
-    background-size: center;
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     background-color: var(--color-background);
   }
 
-  @media (min-width: 768px) {
-
-  }
-
-  @media (min-width: 1400px) {
-
-  }
+/* Task 0 - Header and Navbar
+  ============================= */
 
   header {
     display: flex;
     justify-content: space-around;
   }
 
-  @media (min-width: 768px) {
-
-  }
-
-  @media (min-width: 1400px) {
-
-  }
-
   .navbar {
-
+    display: flex;
+    flex-direction: column;
   }
 
-  @media (min-width: 768px) {
+  .nav-responsive {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 
+    width: 15.4375rem;
+    height: 2.5rem;
+    padding-top: 1.81rem;
   }
 
-  @media (min-width: 1400px) {
+  .hamburger {
+    display: block;
+    margin-left: 1.31rem;
+  }
 
+  .bar-large {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s;
+    background-color: var(--color-white);
+  }
+
+  .bar-small {
+    display: block;
+    width: 15px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s;
+    background-color: var(--color-white);
+  }
+
+  .bar-medium {
+    display: block;
+    width: 20px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s;
+    background-color: var(--color-white);
+  }
+
+  .header-logo {
+  }
+
+  .nav-bar img {
+    padding-right: 6.69rem;
   }
 
   .nav-menu {
 
   }
 
-  @media (min-width: 768px) {
-
-  }
-
-  @media (min-width: 1400px) {
-
-  }
-
   .nav-item {
-
-  }
-
-  @media (min-width: 768px) {
-
-  }
-
-  @media (min-width: 1400px) {
-
+    list-style: none;
   }
 
   .nav-link {
-
-  }
-
-  @media (min-width: 768px) {
-
-  }
-
-  @media (min-width: 1400px) {
 
   }
 
@@ -176,64 +178,103 @@
 
   }
 
-  @media (min-width: 768px) {
-
-  }
-
-  @media (min-width: 1400px) {
-
-  }
-
   .banner {
 
   }
   
-  @media (min-width: 768px) {
-
-  }
-
-  @media (min-width: 1400px) {
-
-  }
-
   .banner-content {
 
   }
 
-  @media (min-width: 768px) {
-
+  .title { 
+    padding-top: 20.44rem;
   }
 
-  @media (min-width: 1400px) {
-
+  .slogan {
+    font-weight: var(--font-weight-x-bold);
+    font-size: var(--font-size-small);
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
-  .banner-title h1 {
-
+  .description {
+    padding-bottom: 6.63rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-small);
+    line-height: var(--line-height-adjusted);
   }
 
-  .banner-content p {
-
+  .banner-button {
+    margin-bottom: 4.06rem;
+    margin-top: 1.25rem;
   }
+
+/* Task 1 - What We Do
+  ============================= */
 
   .what-we-do-section {
     background-color: var(--color-white);
   }
 
-  .services {
+  .what-we-do-content {
+    padding-bottom: 6.87rem;
+  }
 
+  .what-we-do-content h2 {
+    padding-top: 6.87rem;
+  }
+  .what-we-do-content p {
+    padding-top: 2.5rem;
+    padding-left: 1.56rem;
+    padding-right: 1.56rem;
+  }
+
+  .services {
+    padding-top: 6.88rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 6rem;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .services {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding-left: 9.75rem;
+      padding-right: 9.75rem;
+      gap: none;
+    }
   }
 
   .service {
 
   }
 
+  .service img {
+    padding-bottom: 1.48rem;
+  }
+
+  .service h3 {
+
+  }
+
+  .service p {
+    padding-left: 5.25rem;
+    padding-right: 5.25rem;
+  }
+
+/* Task 2 - Results
+  ============================= */
+
   .our-results-section {
     background-image: url("./images/headphones_hero_2.jpg");
     background-size: center;
     background-repeat: no-repeat;
     background-size: cover;
-
   }
 
   .our-results-content {
@@ -251,7 +292,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    gap: 2.62rem;
     padding-bottom: 4.31rem;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .results {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding-left: 9.75rem;
+      padding-right: 9.75rem;
+    }
   }
 
   .result {
@@ -275,6 +328,9 @@
   .result-math p {
     margin-top: 1.05rem;
   }
+
+/* Task 3 - Contact Us
+  ============================= */
 
   .contact-us-section {
     background-color: var(--color-white);
@@ -320,10 +376,30 @@
     margin-bottom: 8.13rem;
   }
 
-  .footer-content {
+/* Task 4 - Footer
+  ============================= */
+
+  .footer-details {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .footer-logo-socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .footer-logo-socials {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      padding-left: 3.125rem;
+      padding-right: 3.125rem;
+    }
   }
 
   .footer-logo {
@@ -341,5 +417,5 @@
   .watermark {
     opacity: 0.3517;
     margin-top: 2.81rem;
-    margin-bottom: 2.12rem;
+    padding-bottom: 2.12rem;
   }
