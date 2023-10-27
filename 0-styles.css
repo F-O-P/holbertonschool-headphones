@@ -100,6 +100,9 @@
   ============================= */
 
   header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .navbar {
@@ -108,7 +111,7 @@
     margin: 1.81rem;
   }
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 481px) {
     .navbar {
       flex-direction: row;
       align-items: center;
@@ -116,63 +119,49 @@
     }
   }
 
-  @media only screen and (min-width: 1400px) {
+  @media only screen and (min-width: 999px) {
     .navbar {
-      flex-direction: row;
       align-items: center;
       justify-content: space-between;
-      padding-left: 12.5rem;
-      padding-right: 12.5rem;
+      gap: 20rem;
     }
   }
 
   .nav-responsive {
     display: flex;
-    align-items: left;
+    align-items: center;
   }
 
-  .hamburger {
-    display: block;
-    align-content: left;
+  .nav-toggle-checkbox {
+    display: none;
   }
 
-  .bar-large {
+  .bar-large, .bar-small {
     display: block;
     width: 25px;
     height: 3px;
     margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s;
+    transition: all 0.3s ease-in-out;
     background-color: var(--color-white);
   }
 
   .bar-small {
-    display: block;
     width: 15px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s;
-    background-color: var(--color-white);
   }
 
-  .bar-medium {
-    display: block;
-    width: 20px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s;
-    background-color: var(--color-white);
+  .bottom-bar {
+    margin-bottom: 0; /* Remove margin from the last bar to prevent extra spacing */
   }
 
-  @media only screen and (min-width: 768px) {
-    .bar-large, .bar-medium, .bar-small, .hamburger {
+  @media only screen and (min-width: 481px) {
+    .bar-large, .bar-small, .hamburger {
       display: none; 
     }
   }
 
   .header-logo {
+    margin-left: 5rem;
+    margin-right: 8rem;
   }
 
   .nav-bar img {
@@ -180,13 +169,34 @@
   }
 
   .nav-menu {
+    display: none;
   }
 
-  .nev-menu-list {
-
+  .nav-menu:target {
+    display: block;
   }
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 481px) {
+    .nav-menu {
+      display: block;
+    }
+  }
+
+  .nav-menu li {
+    margin-top: 2rem;
+  }
+
+  @media only screen and (min-width: 481px) {
+    .nav-menu li {
+      margin-top: 0;
+    }
+  }
+
+  .nav-bar-hide {
+    display: none;
+  }
+
+  @media only screen and (min-width: 481px) {
     .nav-menu-list {
       display: flex;
       flex-direction: row;
@@ -199,27 +209,11 @@
     list-style: none;
   }
 
-  .nav-link {
-
-  }
-
-  main {
-
-  }
-
-  .banner {
-
-  }
-  
-  .banner-content {
-
-  }
-
   .title { 
     padding-top: 20.44rem;
   }
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 481px) {
     .title {
       padding-top: 23.25rem;
     }
@@ -241,14 +235,14 @@
     line-height: var(--line-height-adjusted);
   }
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 481px) {
     .description {
       padding-left: 4.13rem;
       padding-right: 4.13rem;
     }
   }
 
-  @media only screen and (min-width: 1400px) {
+  @media only screen and (min-width: 999px) {
     .description {
       padding-left: 21rem;
       padding-right: 21rem;
@@ -260,7 +254,7 @@
     margin-top: 1.25rem;
   }
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 481px) {
     .banner-button {
       margin-top: 2.5rem;
     }
@@ -291,14 +285,14 @@
     font-size: var(--font-size-small);
   }
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 481px) {
     .what-we-do {
       padding-left: 4.13rem;
       padding-right: 4.13rem;
     }
   }
 
-  @media only screen and (min-width: 1400px) {
+  @media only screen and (min-width: 999px) {
     .what-we-do {
       padding-left: 23rem;
       padding-right: 23rem;
@@ -314,7 +308,7 @@
     gap: 6rem;
   }
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 481px) {
     .services {
       flex-direction: row;
       flex-wrap: wrap;
@@ -322,7 +316,7 @@
     }
   }
 
-  @media only screen and (min-width: 1400px) {
+  @media only screen and (min-width: 999px) {
     .services {
       flex-direction: row;
       flex-wrap: nowrap;
@@ -367,14 +361,14 @@
     margin-right: 2.2rem;
   }
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 481px) {
     .results-text {
       padding-left: 4.13rem;
       padding-right: 4.13rem;
     }
   }
 
-  @media only screen and (min-width: 1400px) {
+  @media only screen and (min-width: 999px) {
     .results-text {
       padding-left: 23rem;
       padding-right: 23rem;
@@ -390,7 +384,7 @@
     padding-bottom: 3.5rem;
   }
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 481px) {
     .results {
       flex-direction: row;
       flex-wrap: wrap;
@@ -400,7 +394,7 @@
     }
   }
 
-  @media only screen and (min-width: 1400px) {
+  @media only screen and (min-width: 999px) {
     .results {
       padding-bottom: 5rem;
     }
@@ -441,7 +435,7 @@
     align-items: center;
   }
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 481px) {
     .contact-us {
       align-items: center;
     }
@@ -486,10 +480,6 @@
 /* Task 4 - Footer
   ============================= */
 
-  .footer-details {
-
-  }
-
   .footer-logo-socials {
     display: flex;
     flex-direction: column;
@@ -498,7 +488,7 @@
     gap: 3.15rem;
   }
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 481px) {
     .footer-logo-socials {
       display: flex;
       flex-direction: row;
@@ -510,7 +500,7 @@
     }
   }
 
-  @media only screen and (min-width: 1400px) {
+  @media only screen and (min-width: 999px) {
     .footer-logo-socials {
       padding-left: 12.5rem;
       padding-right: 12.5rem;
@@ -521,7 +511,7 @@
     margin-top: 3rem;
   }
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 481px) {
     .footer-logo {
       margin-top: 0;
     }

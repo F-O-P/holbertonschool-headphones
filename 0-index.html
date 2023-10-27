@@ -11,16 +11,19 @@
     <header>
       <nav class="navbar">
         <div class="nav-responsive">
-          <div class="hamburger">
-            <span class="bar-large"></span>
-            <span class="bar-small"></span>
-            <span class="bar-medium"></span>
-          </div>
+          <input type="checkbox" id="nav-checkbox" class="nav-bar-hide">
+          <label for="nav-menu">
+            <div class="hamburger">
+              <span class="bar-large top-bar"></span>
+              <span class="bar-small middle-bar"></span>
+              <span class="bar-large bottom-bar"></span>
+            </div>
+          </label>
           <a href="#">
             <img src="images/logo_headphones.png" alt="logo" class="logo header-logo">
           </a>
         </div>
-        <div class="nav-menu">
+        <div class="nav-menu" id="nav-menu">
           <ul class="nav-menu-list">
             <li class="nav-item">
               <a href="#" class="nav-link white-text">what we do</a>
